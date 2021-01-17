@@ -1,2 +1,2 @@
 # Sidehussle
-This is a multiplatform application that would help society in time of trouble to get extra cash from things like investments or doing small businesses either permanently or temporarily
+This is a multiplatform application that would help society in time of trouble to get extra cash from things like investments or doing small businesses.As of today this current project is just an idea would need help makeing this a reality if you are a programmist please comment down any suggestion on programming i can get to develope this project. i hope to later on realise this app on a website that way every user can start using the app asap
