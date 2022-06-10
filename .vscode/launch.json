@@ -7,7 +7,7 @@
             "runtimeArgs": [
                 "--remote-debugging-port=9222"
             ],
-            "file": "C:/Users/alter/OneDrive/Documents/GitHub/Sidehussle/Sidehussle-1/project0/About.html", // Provide your project's url to finish configuring
+            "file": "C:/Users/alter/OneDrive/Documents/GitHub/Sidehussle/Sidehussle/project0/About.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
             }
@@ -20,7 +20,7 @@
                 "--headless",
                 "--remote-debugging-port=9222"
             ],
-            "file": "C:/Users/alter/OneDrive/Documents/GitHub/Sidehussle/Sidehussle-1/project0/About.html", // Provide your project's url to finish configuring
+            "file": "C:/Users/alter/OneDrive/Documents/GitHub/Sidehussle/Sidehussle/project0/About.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
             }
@@ -29,7 +29,7 @@
             "type": "vscode-edge-devtools.debug",
             "name": "Open Edge DevTools",
             "request": "attach",
-            "file":"C:/Users/alter/OneDrive/Documents/GitHub/Sidehussle/Sidehussle-1/project0/About.html", // Provide your project's url to finish configuring
+            "file":"C:/Users/alter/OneDrive/Documents/GitHub/Sidehussle/Sidehussle/project0/About.html", // Provide your project's url to finish configuring
             "presentation": {
                 "hidden": true
             }
