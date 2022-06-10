@@ -5,4 +5,8 @@ So uring the begginig of the pandemic ive noticed how some people tried investme
 
 Now seting investment aside ive seen how people get lyed of from thier jobs and never get then back so i also decide what if the app can also have a social platform and have the education platform to help a person regain or get a new job and making money with it. Now it sounds alot like the Linkedln app but main difference is that linkedln has resumes involved but this app (if wanted to) is resume free meaning no need of resume to do any job on this app. So lets say a person has no job and nowere to find a new one... well the SideHussle app will give that person to do small jobs like mowing a lawn,volenterring for a company,doing small things wihle getting paid to do so and when the person finishes the job Sidehussle would upload and post on what they did from that job and when a person stumbles across that upload they would be able to ask for hire or make a reaction on post.Now lets say a person who has a job but wants to do something else like a side job we will offer any job postition according to his daily work schedual. And if that person needs some certification or training we will offer free classes.
 
-if you find this an interesting opertunity i am looking to create a team of developers so feel free to email me aiterskiy@gmail.com
+if you find this an interesting opertunity i am looking to create a team of developers so feel free to email me aiterskiy@gmail.com 
+
+LOGS:
+June - 10 - 2022: Redesigning of the webtemplet also created a new email for contact at alter99@yahoo.com
+
