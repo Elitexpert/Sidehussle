@@ -1,5 +1,4 @@
 #imports
-import PyQt6
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 from PyQt6.QtCore import *
@@ -9,6 +8,7 @@ import sys
 class Window(QMainWindow):
     def __init__(self):
         super().__init__()
+
 title = "Cronos"
  
         # set the title
