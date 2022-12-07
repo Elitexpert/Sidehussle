@@ -5,27 +5,7 @@ import tkinter
 import tkinter.messagebox
 import time,os,sys
 
-#setting up theme
-customtkinter.set_appearance_mode("system")
-
-#setting up theme for components
-customtkinter.set_default_color_theme("blue")
-  
-# Create ctk window 
-root = customtkinter.CTk()
-  
-# Adjust size 
-root.geometry("400x400")
-  
-#CTK Buttons
-Button=customtkinter.CTkRadioButton(master=root, text="")
-
-#show at center of screen
-Button.place(relx=0.5, rely=0.5, anchor=CENTER)
-
-#Python Typing Text Effect - www.101computing.net/python-typing-text-effect/
-import time,os,sys
-
+#definitions
 def typingPrint(text):
   for character in text:
     sys.stdout.write(character)
@@ -42,22 +22,28 @@ def typingInput(text):
   
 def clearScreen():
   os.system("clear")
-    
-typingPrint("Hello im Cronos\n")
-time.sleep(1)
-typingPrint("sidehussle's A.I\n")
-time.sleep(1)
 
-pillColor = typingInput("Need Help job finidng? (Type Y for Yes, N for No)")
+#setting up theme
+customtkinter.set_appearance_mode("system")
 
-if pillColor == "Y":
-  typingPrint("Initiating job finding sequence protocol ")
-  typingPrint("your results are minuts away\n")
-elif pillColor == "N":
-  typingPrint("Are you Hiring ")
-  typingPrint("Type E for employer\n")
-else:
-  typingPrint("Invalid answer!")
+#setting up theme for components
+customtkinter.set_default_color_theme("blue")
+  
+# Create ctk window 
+root = customtkinter.CTk()
+  
+# Adjust size 
+root.geometry("400x400")
+  
+#CTK Buttons
+typingPrint("Hi im Cronos\n")
+time.sleep(1)
+typingPrint("I am Sidehussles little A.I!\n")
+time.sleep(1)
+Button=customtkinter.CTkRadioButton(master=root)
+
+#show at center of screen
+Button.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 # Execute tkinter
 root.mainloop()
