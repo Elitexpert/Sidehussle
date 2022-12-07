@@ -6,6 +6,9 @@ from PyQt6.QtCore import *
 import sys
 
 #window
+class Window(QMainWindow):
+    def __init__(self):
+        super().__init__()
 app = QApplication(sys.argv)
 window = QWidget()
 window.show() 
