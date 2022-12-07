@@ -11,4 +11,5 @@ window = QWidget()
 window.show() 
 app.exec()
 title = "Cronos"
-self.setwindowTitle(title)
+self.setWindowTitle(title)
+self.show()
