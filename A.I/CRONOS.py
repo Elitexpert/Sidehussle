@@ -36,11 +36,7 @@ root = customtkinter.CTk()
 root.geometry("400x400")
   
 #CTK Buttons
-typingPrint("Hi im Cronos\n")
-time.sleep(1)
-typingPrint("I am Sidehussles little A.I!\n")
-time.sleep(1)
-Button=customtkinter.CTkRadioButton(master=root)
+Button=customtkinter.CTkRadioButton(master=root, typingPrint("Hello im  Cronos/n"), time.sleep(1), typingPrint("Im Sidehussles little A.I"), time.sleep(1), typingPrint("click on the circle to get started"))
 
 #show at center of screen
 Button.place(relx=0.5, rely=0.5, anchor=CENTER)
