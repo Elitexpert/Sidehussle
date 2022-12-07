@@ -1,7 +1,8 @@
 #imports
 import PyQt6
-from PyQt6.QtWidgets import QApplication, QWidget, QProgressBar, QPushButton
-from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import *
+from PyQt6.QtCore import *
 import sys
 
 #window
@@ -10,3 +11,4 @@ window = QWidget()
 window.show() 
 app.exec()
 title = "Cronos"
+self.setwindowTitle(title)
