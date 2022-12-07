@@ -6,6 +6,9 @@ layout = [[sg.Text("Cronos AI")], [sg.Button("OK")]]
 # Create the window
 window = sg.Window("Demo", layout)
 
+#create background image
+
+
 # Create an event loop
 while True:
     event, values = window.read()
