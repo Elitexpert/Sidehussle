@@ -1,4 +1,3 @@
-#Cronos.py
 # Import module 
 from tkinter import *
   
@@ -9,7 +8,7 @@ root = Tk()
 root.geometry("400x400")
   
 # Add image file
-bg = PhotoImage(file = "Your_img.png")
+bg = PhotoImage(file = "C:\Users\alter\OneDrive\Documents\GitHub\Sidehussle\Sidehussle-1\project0\Images\499419.jpg")
   
 # Create Canvas
 canvas1 = Canvas( root, width = 400,
