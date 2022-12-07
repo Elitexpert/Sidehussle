@@ -1,6 +1,8 @@
 # Import module 
 from tkinter import *
 import customtkinter
+import tkinter
+import tkinter.messagebox
 
 #setting up theme
 customtkinter.set_appearance_mode("system")
