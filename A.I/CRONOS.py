@@ -6,7 +6,7 @@ import customtkinter
 customtkinter.set_appearance_mode("system")
 
 #setting up theme for components
-customtkinter.set_default_color_theme("Blue")
+customtkinter.set_default_color_theme("blue")
   
 # Create ctk window 
 root = customtkinter.CTk()
