@@ -1,6 +1,9 @@
 # Import module 
 from tkinter import *
 import customtkinter
+
+#setting up theme
+customtkinter.set_appearance_mode("system")
   
 # Create ctk window 
 root = customtkinter.CTk()
