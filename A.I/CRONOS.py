@@ -1,9 +1,10 @@
 # importing the required libraries
 
+import sys
+
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-import sys
 
 
 class Window(QMainWindow):
@@ -12,37 +13,17 @@ class Window(QMainWindow):
 
 
 		# set the title
-		self.setWindowTitle("Python")
+		self.setWindowTitle("Cronos")
 
 		# setting the geometry of window
 		self.setGeometry(60, 60, 600, 400)
 
 
-		# creating a label widget
-		self.label_1 = QLabel(self)
+		# creating a window background
+		label = QLabel(self)
+		pixmap = QPixmap('C:\Users\alter\OneDrive\Documents\Sidehussle\project0\Images\499419.jpg')
+		label.setPixmap(pixmap)
 
-		# moving position
-		self.label_1.move(100, 100)
-
-		# setting up the border
-		self.label_1.setStyleSheet("border :3px solid blue;")
-
-		# setting label text
-		self.label_1.setText("no background image")
-
-		# creating a label widget
-		self.label_2 = QLabel(self)
-
-		# moving position
-		self.label_2.move(160, 170)
-
-		# setting up the border and adding image to background
-		self.label_2.setStyleSheet("background-image : url(https://github.com/Elitexpert/Sidehussle/blob/main/project0/Images/499419.jpg); border : 2px solid blue")
-
-
-		# setting label text
-		self.label_2.setText("with background image")
-		self.label_2.resize(100, 50)
 
 		# show all the widgets
 		self.show()
