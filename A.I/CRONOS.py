@@ -1,58 +1,55 @@
-# importing the required libraries
+import tensorflow as tf
+import numpy as np
 
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
-from PyQt5.QtWidgets import *
-import sys
+# Define some constants
+embedding_dim = 128
+encoder_units = 128
+decoder_units = 128
 
+# Load the data
+questions = [
+    "What is your name?",
+    "How old are you?",
+    "Where are you from?",
+    "What do you do?",
+    "What are your hobbies?",
+]
 
-class Window(QMainWindow):
-	def __init__(self):
-		super().__init__()
+answers = [
+    "My name is Alice.",
+    "I am 25 years old.",
+    "I am from New York.",
+    "I am a software engineer.",
+    "I enjoy reading, hiking, and playing video games.",
+]
 
+# Preprocess the data
+def load_and_preprocess_data():
+    # Create a vocabulary of all the words in the questions and answers
+    vocab = set(questions + answers)
+    vocab_size = len(vocab)
 
-		# set the title
-		self.setWindowTitle("Python")
+    # Create a vocabulary index
+    vocab_index = {word: index for index, word in enumerate(vocab)}
 
-		# setting the geometry of window
-		self.setGeometry(60, 60, 600, 400)
+    # Encode the data
+    def encode(sentence):
+        encoded_sentence = []
+        for word in sentence.split():
+            if word in vocab_index:
+                encoded_sentence.append(vocab_index[word])
+        return encoded_sentence
 
+    x_train = np.array([encode(question) for question in questions])
+    y_train = np.array([encode(answer) for answer in answers])
 
-		# creating a label widget
-		self.label_1 = QLabel(self)
+    # Create a validation set
+    x_val = x_train[:2]
+    y_val = y_train[:2]
 
-		# moving position
-		self.label_1.move(100, 100)
+history = model.fit(
+    [x_train, y_train[:, :-1]], y_train[:, 1:],
+    batch_size=32, epochs=10, validation_data=([x_val, y_val[:, :-1]], y_val[:, 1:])
+)
 
-		# setting up the border
-		self.label_1.setStyleSheet("border :3px solid blue;")
-
-		# setting label text
-		self.label_1.setText("no background image")
-
-		# creating a label widget
-		self.label_2 = QLabel(self)
-
-		# moving position
-		self.label_2.move(160, 170)
-
-		# setting up the border and adding image to background
-		self.label_2.setStyleSheet("background-image : url(https://github.com/Elitexpert/Sidehussle/blob/main/project0/Images/499419.jpg); border : 2px solid blue")
-
-
-		# setting label text
-		self.label_2.setText("with background image")
-		self.label_2.resize(100, 50)
-
-		# show all the widgets
-		self.show()
-
-
-# create pyqt5 app
-App = QApplication(sys.argv)
-
-# create the instance of our Window
-window = Window()
-# start the app
-sys.exit(App.exec())
-
+print(history)
